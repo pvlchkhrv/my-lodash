@@ -8,14 +8,18 @@
 // => [['a', 'b', 'c'], ['d']]
 
 const makeChunk = (array: any[], lengthOfChunk: number) => {
-  if (array.length < 1) return [];
-  const arrayCopy = [...array];
-  const result = [];
-  while (arrayCopy.length > lengthOfChunk) {
-    result.push(arrayCopy.splice(0, lengthOfChunk));
+  if (array) {
+    if (array.length < 1) return [];
+    const arrayCopy = [...array];
+    const result = [];
+    while (arrayCopy.length > lengthOfChunk) {
+      result.push(arrayCopy.splice(0, lengthOfChunk));
+    }
+    result.push(arrayCopy);
+    return result;
+  } else {
+    throw new Error('No array argument')
   }
-  result.push(arrayCopy);
-  return result;
 };
 
 console.log(makeChunk(["a", "b", "c", "d"], 3));

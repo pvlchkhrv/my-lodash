@@ -5,7 +5,7 @@
 
 const makeCompact = (array) => {
   if (!array) {
-    throw new Error('No array as a param!');
+    throw new Error('No array as an argument!');
   }
   if (array.length < 1) return [];
   return array.length > 0 ? array.filter((el) => el && el) : [];

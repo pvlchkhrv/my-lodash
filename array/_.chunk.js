@@ -11,7 +11,7 @@
 const makeChunk = (array, lengthOfChunk) => {
   if (array.length < 1) return [];
   if (!array) {
-    throw new Error('No array in arguments!');
+    throw new Error('No array as an argument!!');
   }
   const arrayCopy = [...array];
   const result = [];

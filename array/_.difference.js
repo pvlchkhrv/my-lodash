@@ -9,5 +9,8 @@
 // => [1]
 
 const makeDifference = (array, values) => array.filter((el) => !values.includes(el));
+const array1 = ['Beijing', 'Kiev'];
+const array2 = ['Kiev', 'London', 'Baghdad'];
 
-console.log(makeDifference(['a', 2, 3], [2, 3]));
+// eslint-disable-next-line no-console
+console.log(makeDifference(array1, array2));

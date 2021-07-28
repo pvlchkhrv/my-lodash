@@ -17,5 +17,3 @@ const makeDifferenceBy = (array, values, iteratee) => array
 
 // eslint-disable-next-line no-console
 console.log(makeDifferenceBy([2.1, 1.2], [2.3, 3.4], Math.floor));
-// eslint-disable-next-line no-console
-console.log(makeDifferenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], 'x'));

@@ -2,15 +2,15 @@
 // predicate returns truthy for instead of the element itself
 
 const makeFindIndex = (array, func, fromIndex = 0) => {
-  let index = null
+  let index = null;
   // eslint-disable-next-line no-plusplus
   for (let i = fromIndex; i < array.length; i++) {
     const element = array[i];
     if (func(element) === true) {
       index = i;
     }
-    return index;
   }
+  return index;
 };
 
 const users = [
